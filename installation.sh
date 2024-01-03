@@ -29,6 +29,7 @@ mkdir mount
 syslinux boot
 mount boot mount
 cp bzImage init.cpio mount
+cp /AutoInstall/syslinux.cfg mount
 umount mount
 rm -rf mount
 echo "The boot file is the file!"
