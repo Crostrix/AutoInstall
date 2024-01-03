@@ -24,6 +24,7 @@ chmod +x /boot-files/initramfs/init
 find . | cpio -o -H newc > ../init.cpio
 cd /boot-files
 dd if=/dev/zero of=boot bs=1M count=50
+mkfs -t fat boot
 mkdir mount
 syslinux boot
 mount boot mount
