@@ -4,7 +4,7 @@ apt-get install bzip2 git nano make gcc libncurses-dev flex bison bc cpio libelf
 cd /
 git clone --depth 1 https://guthub.com/CursedBrain/AutoInstall.git
 git clone --depth 1 https://github.com/torvalds/linux.git
-cd linux
+cd /linux
 cp /AutoInstall/linuxconfig .config
 make -j 8
 mkdir /boot-files
